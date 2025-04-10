@@ -12,22 +12,22 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>User</span>
+          <i class="bi bi-menu-button-wide"></i><span>Department</span>
         </a>
         
-      </li><!-- End Components Nav -->
+      </li><!-- End Department Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-journal-text"></i><span>Doctor</span>
         </a>
-      </li><!-- End Forms Nav -->
+      </li><!-- End Doctor Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Patient</span>
         </a>
-      </li><!-- End Tables Nav -->
+      </li><!-- End Patient Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
