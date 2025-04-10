@@ -1,5 +1,5 @@
 @extends('backend.layouts.app')
-@section('backend')
+@section('main')
 <main id="main" class="main">
 
     <div class="pagetitle">
