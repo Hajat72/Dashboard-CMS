@@ -1,5 +1,5 @@
-@extends('backend.layouts.auth')
-@section('dash')
+@extends('backend.layouts.app')
+@section('main')
 
 <div class="content-wrapper">
     <section class="section container-fluid">
@@ -8,23 +8,23 @@
                 
                 <!-- Full-Width Background for Header -->
                 <div class="bg-primary text-white px-3 py-3 d-flex justify-content-between align-items-center rounded-top">
-                    <h5 class="mb-0">Slider Create</h5>
-                    <a href="{{ route('slider.index') }}" class="btn btn-light btn-sm">
+                    <h5 class="mb-0">Department Create</h5>
+                    <a href="#" class="btn btn-light btn-sm">
                         <i class="fas fa-arrow-left"></i> Back
                     </a>
                 </div>
 
                 <div class="card shadow-lg border-0">
                     <div class="card-body p-4">
-                        <form action="{{ route('slider.store') }}" method="POST" enctype="multipart/form-data">
+                        <form action="#" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('POST')
 
                             <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <label for="title" class="form-label">Title</label>
-                                    <input type="text" class="form-control" id="title" name="title">
-                                    @error('title')
+                                    <label for="title" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                    @error('name')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -39,18 +39,12 @@
                             </div>
 
                             <div class="row mb-3">
-                                <div class="col-md-6">
-                                    <label for="image" class="form-label">Image</label>
-                                    <input type="file" class="form-control" id="image" name="image">
-                                    @error('image')
-                                        <span class="text-danger">{{ $message }}</span>
-                                    @enderror
-                                </div>
+                                
 
                                 <div class="col-md-6">
-                                    <label for="read_more" class="form-label">Read More</label>
-                                    <input type="url" class="form-control" id="read_more" name="read_more">
-                                    @error('read_more')
+                                    <label for="read_more" class="form-label">Code</label>
+                                    <input type="number" class="form-control" id="code" name="code">
+                                    @error('code')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
